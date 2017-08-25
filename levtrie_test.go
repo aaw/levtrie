@@ -569,13 +569,13 @@ func generateEdits(k int, n int) []string {
 			continue
 		}
 		switch rand.Intn(3) {
-		case 0:  // Delete
+		case 0: // Delete
 			i := rand.Intn(len(runes))
 			runes = append(runes[:i], runes[i+1:]...)
-		case 1:  // Insert
+		case 1: // Insert
 			i, j := rand.Intn(len(runes)), rand.Intn(len(alphabet))
 			runes = append(append(runes[:i], alphabet[j]), runes[i:]...)
-		case 2:  // Substitute
+		case 2: // Substitute
 			i, j := rand.Intn(len(runes)), rand.Intn(len(alphabet))
 			runes = append(append(runes[:i], alphabet[j]), runes[i+1:]...)
 		}
