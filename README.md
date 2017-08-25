@@ -35,4 +35,4 @@ corrections.
 All of the searches restricted by edit distance in `levtrie` are accomplished
 by generating a non-deterministic Levenshtein Automata on the fly and simulating
 it in parallel with the Trie search. I've described this technique in more
-detail in this post.
+detail in [this post](http://blog.aaw.io/2017/08/25/levenshtein-automata.html).
