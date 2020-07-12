@@ -17,11 +17,14 @@ import "github.com/aaw/levtrie"
 ...
 
 t := levtrie.New()
-for word := range wordlist {
+for _, word := range wordlist {
     t.Set(word, "")
 }
-results := t.Suggest("similar", 2, 10)
+results := t.Suggest("sitting", 2, 10)
 ```
+
+Or see
+[a full example at the Go Playground](https://play.golang.org/p/dlNIUOpLk4x).
 
 See [the godoc for this package](https://godoc.org/github.com/aaw/levtrie)
 for complete documentation.
