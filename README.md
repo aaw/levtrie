@@ -8,7 +8,7 @@ key-value pairs where the key is within a particular edit distance of a query
 string.
 
 Here's an example of how you might use `levtrie` to find the 10 closest words
-to the word "sittingg" that are within edit distance 2 from a list of words
+to the word "sitting" that are within edit distance 2 from a list of words
 held in the slice `wordlist`:
 
 ```
